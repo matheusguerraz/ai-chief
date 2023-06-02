@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Chatbot de Receitas</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <h1>Bem-vindo ao Chatbot de Receitas!</h1>
+
+        <div id="ingredients-input">
+            <label for="ingredients">Quais ingredientes você tem hoje?</label>
+            <textarea id="ingredients" rows="5"></textarea>
+            <button id="submit-btn" onclick="enviarPergunta()">Enviar</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+        </div>
+
+        <div id="response">
+            <h2>Receita:</h2>
+            <strong id="recipe"></strong>
+        </div>
+        
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
