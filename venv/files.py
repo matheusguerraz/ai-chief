@@ -5,4 +5,4 @@ load_dotenv()
 
 api_key = os.getenv("API_KEY")
 
-print("API Key:", api_key)
+print("API Key:", api_key)  
